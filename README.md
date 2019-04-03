@@ -58,7 +58,11 @@ Now run docker-compose.yml: docker-compose up (make sure you are in the same dir
 
 After that there should be 3 containers able to talk with each other over virtual network that is specified in docker-compose.yml file.
 
-To test if everything is working go to browser and type http://localhost:8080//java/api/v1/status or http://localhost/java/api/v1/node
+To test if everything is working go to browser and type:
+
+http://localhost:8080/java/api/v1/status or
+
+http://localhost/java/api/v1/node
 
 If containers are running on cloud make sure to type public ip address of server.
 
