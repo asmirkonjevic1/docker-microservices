@@ -17,15 +17,15 @@ So you will have spring-boot-app, node-app and newly created postgres directory.
 To build Spring App cd into spring-boot-app folder: 
 uname@ubuntu$:cd basic-microservices/spring-boot-app
 
-Change application.yml file in basic-microservices/spring-boot-app/src/main/resources/
+Change application.yml file in basic-microservices/spring-boot-app/src/main/resources/.
 uname@ubuntu:~/basic-microservices/spring-boot-app/src/main/resources/$ nano application.yml
 
 Replace app.node.url: http://localhost:8081/ with app.node.url: http://node:8081/ so that Spring app can find Node App when we run Containers.
-Do the same for url: jdbc:postgresql://localhost:5432/demodb ----> url: jdbc:postgresql://db:5432/demodb
+Do the same for url: jdbc:postgresql://localhost:5432/demodb ----> url: jdbc:postgresql://db:5432/demodb.
 Change password: DemoPa$$ with password: demopass (I had authentication problems when using symbols in password).
 
 Save application.yml file and go back to basic-microservices/spring-boot-app directory.
-run mvn clean package and wait for application to build jar file. Jar file will be located in target directory ( basic-microservices/spring-boot-app/target/ )
+run mvn clean package and wait for application to build jar file. Jar file will be located in target directory ( basic-microservices/spring-boot-app/target/ ).
 
 Copy Dockerfile-spring in basic-microservices/spring-boot-app/ and rename it to Dockerfile.
 Copy Dockerfile-node in basic-microservices/node-app/ and rename it to Dockerfile.
