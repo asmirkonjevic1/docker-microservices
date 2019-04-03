@@ -17,7 +17,8 @@ So you will have spring-boot-app, node-app and newly created postgres directory.
 To build Spring App cd into spring-boot-app folder: 
 uname@ubuntu$:cd basic-microservices/spring-boot-app
 
-Change application.yml file in basic-microservices/spring-boot-app/src/main/resources/.
+Change application.yml file in basic-microservices/spring-boot-app/src/main/resources/
+
 uname@ubuntu:~/basic-microservices/spring-boot-app/src/main/resources/$ nano application.yml
 
 Replace app.node.url: http://localhost:8081/ with app.node.url: http://node:8081/ so that Spring app can find Node App when we run Containers.
