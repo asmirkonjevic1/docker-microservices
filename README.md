@@ -53,7 +53,7 @@ To test if everything is working go to browser and type http://localhost:8080//j
 
 If containers are running on cloud make sure to type public ip address of server.
 
-You can use images specified above if you dont want to build your own. If you choose to build your own make sure that image names in docker-compose are matching your images.
+You can use images specified above if you dont want to build your own. If you choose to build your own make sure that image names in docker-compose.yml are matching your images.
 
 
 
