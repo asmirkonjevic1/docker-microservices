@@ -9,8 +9,8 @@ postgresql
 Steps: 
   git clone https://github.com/kkenan/basic-microservices
   
-Inside basic-microservices there are 2 directories: node-app and spring-boot-app
-Create new directory in basic-microservices: postgres
+Inside basic-microservices there are 2 directories: node-app and spring-boot-app.
+Create new directory in basic-microservices: postgres.
 
 So you will have spring-boot-app, node-app and newly created postgres directory.
 
