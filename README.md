@@ -22,18 +22,26 @@ Change application.yml file in basic-microservices/spring-boot-app/src/main/reso
 uname@ubuntu:~/basic-microservices/spring-boot-app/src/main/resources/$ nano application.yml
 
 Replace app.node.url: http://localhost:8081/ with app.node.url: http://node:8081/ so that Spring app can find Node App when we run Containers.
+
 Do the same for url: jdbc:postgresql://localhost:5432/demodb ----> url: jdbc:postgresql://db:5432/demodb.
+
 Change password: DemoPa$$ with password: demopass (I had authentication problems when using symbols in password).
 
 Save application.yml file and go back to basic-microservices/spring-boot-app directory.
-run mvn clean package and wait for application to build jar file. Jar file will be located in target directory ( basic-microservices/spring-boot-app/target/ ).
+
+run mvn clean package and wait for application to build jar file. 
+
+Jar file will be located in target directory ( basic-microservices/spring-boot-app/target/ ).
 
 Copy Dockerfile-spring in basic-microservices/spring-boot-app/ and rename it to Dockerfile.
+
 Copy Dockerfile-node in basic-microservices/node-app/ and rename it to Dockerfile.
+
 Copy Dockerfile-postgres in basic-microservices/postgres/ and rename it to Dockerfile.
 
 Go in each directory where Dockerfile is located and run: docker build -t name/docker-spring-boot:latest or replace with your own name.
 This will build 3 docker images.
+
 In my case it is akonjevic/docker-spring-boot:final, akonjevic/postgresql2 and akonjevic/docker-node:firsttry
 
 // MY IMAGES ON DOCKER HUB
